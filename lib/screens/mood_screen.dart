@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animated_emoji/widgets/column_mood_affects.dart';
 import 'package:flutter_animated_emoji/widgets/row_animated_emoji.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -78,6 +79,7 @@ class _MoodScreenState extends State<MoodScreen> {
             const SizedBox(
               height: 10,
             ),
+            const ColumnMoodAffects(),
             const SizedBox(
               height: 30,
             ),

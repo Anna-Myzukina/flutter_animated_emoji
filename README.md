@@ -47,6 +47,12 @@ To use FontAwesomIcons https://fontawesome.com/search add this package [font_awe
 flutter pub add font_awesome_flutter
 ```
 
+To use Noto Emoji Google font download it from here : [Noto Emoji](https://fonts.google.com/noto/specimen/Noto+Emoji)
+
+Noto Emoji is an open source font that has you covered for all your emoji needs, including support for the latest Unicode emoji specification. It has multiple weights and features thousands of emoji.
+
+
+
 ## 🤝 Contributing
 
 - Contributions, issues and feature requests are welcome!

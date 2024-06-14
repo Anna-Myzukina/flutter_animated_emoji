@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class EmojiiButton extends StatefulWidget {
-  final String? imageEmojii;
-  final String? animatedEmojii;
+class EmojiButton extends StatefulWidget {
+  final String? imageEmoji;
+  final String? animatedEmoji;
   
-  const EmojiiButton({
+  const EmojiButton({
     super.key,
-    this.imageEmojii,
-    this.animatedEmojii
+    this.imageEmoji,
+    this.animatedEmoji
     });
 
   @override
-  State<EmojiiButton> createState() => _EmojiiButtonState();
+  State<EmojiButton> createState() => _EmojiiButtonState();
 }
 
-class _EmojiiButtonState extends State<EmojiiButton> {
+class _EmojiiButtonState extends State<EmojiButton> {
   bool isActive = true;
 
   @override
@@ -28,21 +28,37 @@ class _EmojiiButtonState extends State<EmojiiButton> {
       },
       borderRadius: BorderRadius.circular(999),
       child: isActive
+       /// Comment to use Noto Emoji and lotti from .json file
           ? Container(
               width: 55,
               height: 55,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage(widget.imageEmojii ?? 'assets/emoji/very_sad.png'),
+                      image: AssetImage(widget.imageEmoji ?? 'assets/emoji/very_sad.png'),
                       fit: BoxFit.fill),
                   borderRadius: BorderRadius.circular(999)),
             )
           : Lottie.network(
-              widget.animatedEmojii ?? 'https://fonts.gstatic.com/s/e/notoemoji/latest/1f979/lottie.json',
+              widget.animatedEmoji ?? 'https://fonts.gstatic.com/s/e/notoemoji/latest/1f979/lottie.json',
               height: 50,
               width: 50,
               fit: BoxFit.fill,
             ),
+          /// Uncomment to use Noto Emoji and lotti from .json file
+          
+          //  ? Text(
+          //   widget.imageEmoji ?? '',
+          //   style: const TextStyle(
+          //     fontSize: 50,
+          //     fontFamily: 'NotoEmoji',
+          //     color: Colors.grey
+          //   ),)
+          // : Lottie.asset(
+          //     widget.animatedEmoji ?? 'assets/lottie/happy.json',
+          //     height: 50,
+          //     width: 50,
+          //     fit: BoxFit.fill,
+          //   ),
     );
   }
 }
