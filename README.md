@@ -1,6 +1,7 @@
 # flutter_animated_emoji
 
 A Guide to Adding Animated Emoji in Flutter with lottie package
+![img](https://miro.medium.com/v2/resize:fit:462/format:webp/1*NX4_EIRzmg9CqaZVgnCBbA.gif)
 
 ## Getting Started
 
